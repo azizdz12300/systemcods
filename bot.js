@@ -12,7 +12,7 @@ client.on('message', msg => {
 });
 
 client.on('ready',  () => {
-  console.log('By : zezo');
+  console.log('By : ,Walter.js#2002');
   console.log(`Logged in as * [ " ${client.user.username} " ] servers! [ " ${client.guilds.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] Users! [ " ${client.users.size} " ]`);
   console.log(`Logged in as * [ " ${client.user.username} " ] channels! [ " ${client.channels.size} " ]`);
@@ -29,13 +29,13 @@ client.on("message", message => {
       .setColor("RANDOM")
       .addField("『vs Bot』 『اسم البوت』", true)
       
-      .addField("『المصمم』       زيزو", true)
+      .addField("『المصمم』,Walter.js#2002", true)
       
-      .addField("『^help^』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
+      .addField("『+1help』😘『اذا تبي جميع الاوامر مع اوامر اضافية』😵", true)
       
-	    .addField("『^help^^』👻『اذا تبي الاوامر العامة』😳", true)
+	    .addField("『+2help』👻『اذا تبي الاوامر العامة』😳", true)
 	    
-      .addField("『^help^^^』😮『اذا تبي  الاوامر الادارية』🤒", true)
+      .addField("『+3help』😮『اذا تبي  الاوامر الادارية』🤒", true)
       
       .addField("『🤑』『قريبا سوف نضيف المزيد و المزيد من الاوامر 』『😉』", true)
       
@@ -48,25 +48,25 @@ client.on("message", message => {
 
 
 client.on('message', message => {
-   if (message.content === "^^roll 1") {
+   if (message.content === "+roll 1") {
   message.channel.sendMessage(Math.floor(Math.random() * 25));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "^^roll 2") {
+   if (message.content === "+roll 2") {
   message.channel.sendMessage(Math.floor(Math.random() * 50));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "^^roll 3") {
+   if (message.content === "+roll 3") {
   message.channel.sendMessage(Math.floor(Math.random() * 75));
     }
 });
  
 client.on('message', message => {
-   if (message.content === "^^roll 4") {
+   if (message.content === +roll 4") {
   message.channel.sendMessage(Math.floor(Math.random() * 100));
     }
 });
@@ -169,7 +169,7 @@ const zead = [
 ]
 
  client.on('message', message => {
-   if (message.content.startsWith("^^كت تويت")) {
+   if (message.content.startsWith("+كت تويت")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -197,7 +197,7 @@ const secreT = [
 
 
  client.on('message', message => {
-   if (message.content.startsWith("^^خواطر")) {
+   if (message.content.startsWith("+خواطر")) {
                 if(!message.channel.guild) return message.reply('** This command only for servers**');
   var embed = new Discord.RichEmbed()
   .setColor('RANDOM')
@@ -213,7 +213,7 @@ const secreT = [
 
 
 client.on("message", message => {
- if (message.content === "^help^") {
+ if (message.content === "+help") {
         message.react("😘")
            message.react("😵")
   const embed = new Discord.RichEmbed() 
@@ -340,7 +340,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "^help^^^") {
+ if (message.content === "+4help") {
         message.react("😮")
                 message.react("🤒")
   const embed = new Discord.RichEmbed() 
@@ -400,7 +400,7 @@ message.author.sendEmbed(embed)
 
 
 client.on("message", message => {
- if (message.content === "^help^^") {
+ if (message.content === "+6help") {
         message.react("😳")
                 message.react("👻")
   const embed = new Discord.RichEmbed() 
@@ -455,7 +455,7 @@ message.author.sendEmbed(embed)
 
 
 client.on('message', message => {
-    if (message.content.startsWith("^^avatar")) {
+    if (message.content.startsWith("+7avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
@@ -489,7 +489,7 @@ client.on('message', message => {
                     });
 
 client.on("message", (message) => {
-if (message.content.startsWith("^^ct")) {
+if (message.content.startsWith("+8ct")) {
             if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
         let args = message.content.split(" ").slice(1);
     message.guild.createChannel(args.join(' '), 'text');
@@ -512,7 +512,7 @@ if (message.content.startsWith("^^cv")) {
 
 
 
-var prefix = "^^";
+var prefix = "++";
 
 client.on('message', message => {
   if (message.author.bot) return;
@@ -544,7 +544,7 @@ if (command == "embed") {
 
 
    client.on("message", message => {
-    const prefix = "^^"
+    const prefix = "++"
               
           if(!message.channel.guild) return;
    if(message.author.bot) return;
@@ -563,7 +563,7 @@ if (command == "embed") {
   });
   
   client.on('message', (message) => {
-    if (message.content.startsWith('^^kick')) {
+    if (message.content.startsWith('+kick')) {
         var member= message.mentions.members.first();
         member.kick().then((member) => {
             message.channel.send(member.displayName + ' تم طرد هذا الشخص من السيرفر');
@@ -575,7 +575,7 @@ if (command == "embed") {
 
 
 client.on('message', (message) => {
-    if (message.content.startsWith('^^ban ')) {
+    if (message.content.startsWith('++ban ')) {
       if(!message.member.hasPermission('BAN_MEMBERS')) return message.reply('هذا الخاصية للدارة فقط');
         var member= message.mentions.members.first();
         member.ban().then((member) => {
@@ -587,7 +587,7 @@ client.on('message', (message) => {
 });
   
   client.on("message", (message) => {
-    if (message.content.startsWith('^^delet')) {
+    if (message.content.startsWith('+delet')) {
         if (!message.member.hasPermission('MANAGE_CHANNELS')) return message.reply("You Don't Have `MANAGE_CHANNELS` Premissions ");
 
         let args = message.content.split(' ').slice(1);
@@ -607,7 +607,7 @@ client.on('message', message => {
     }
 });
 
-  var prefix = "^^";
+  var prefix = "+++";
 var cats = ["https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg","http://www.dogbazar.org/wp-content/uploads/2014/09/british-bull-dog-puppies.jpg","http://cdn2-www.dogtime.com/assets/uploads/gallery/german-shepherd-dog-breed-pictures/standing-7.jpg","http://cdn.akc.org/Marketplace/Breeds/German_Shepherd_Dog_SERP.jpg","https://animalso.com/wp-content/uploads/2016/12/black-german-shepherd_2.jpg","https://static.pexels.com/photos/104827/cat-pet-animal-domestic-104827.jpg","https://www.petfinder.com/wp-content/uploads/2012/11/101438745-cat-conjunctivitis-causes.jpg","http://www.i-love-cats.com/images/2015/04/12/cat-wallpaper-38.jpg","https://www.aspca.org/sites/default/files/cat-care_urine-marking_main-image.jpg","https://s-media-cache-ak0.pinimg.com/originals/f0/3b/76/f03b7614dfadbbe4c2e8f88b69d12e04.jpg","http://www.rd.com/wp-content/uploads/sites/2/2016/04/15-cat-wants-to-tell-you-attention.jpg","https://www.thelocal.de/userdata/images/article/fa6fd5014ccbd8f4392f716473ab6ff354f871505d9128820bbb0461cce1d645.jpg","https://www.adelaidezoo.com.au/wp-content/uploads/sites/2/animals/GiantPanda3Slider.jpg","http://imagem.band.com.br/f_230168.jpg"]
     client.on('message', message => {
         var args = message.content.split(" ").slice(1);
@@ -619,7 +619,7 @@ message.channel.sendEmbed(cat);
 });
 
 client.on('message', message => {
-var prefix = "^^";
+var prefix = "+++";
 
     if (message.author.id === client.user.id) return;
     if (message.guild) {
@@ -674,7 +674,7 @@ client.on('message', message => {
 
 
   client.on('message', message => {
-    if (message.content === "^^rooms") {
+    if (message.content === "+rooms") {
                       if (!message.guild) return;
 
         var channels = message.guild.channels.map(channels => `${channels.name}, `).join(' ')
@@ -688,7 +688,7 @@ client.on('message', message => {
     }
 });
 
-  var prefix = "^^";
+  var prefix = "+++";
   const HeRo = new Discord.Client();
   client.on('message', message => {
       if (message.content === prefix + "date") {
@@ -730,7 +730,7 @@ client.on('message', message => {
 
 
 
-var prefix = "^^"
+var prefix = "++"
 
 client.on('message', message => {
     if (message.author.bot) return;
@@ -742,7 +742,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-     if (message.content === "^^bot") {
+     if (message.content === "+bot") {
             if(!message.channel.guild) return message.reply('** This command only for servers **');
      let embed = new Discord.RichEmbed()
   .setColor("RANDOM")
@@ -757,7 +757,7 @@ message.channel.sendEmbed(embed);
 
 
 client.on('message', message => {
-    if (message.content === "^^roles") {
+    if (message.content === "+roles") {
         var roles = message.guild.roles.map(roles => `${roles.name}, `).join(' ')
         const embed = new Discord.RichEmbed()
         .setColor('RANDOM')
@@ -777,7 +777,7 @@ client.on("guildCreate", guild => {
   
   
 client.on('ready', () => {
-   client.user.setGame(" ^^help | ^^invite ");
+   client.user.setGame(" ++help++ |  ");
 }); 
 
 client.on("message", message => {
@@ -839,7 +839,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (true) {
 if (message.content === '^^invite') {
-      message.author.send(' رابط البوت |  https://discordapp.com/oauth2/authorize?client_id=378398305153187840&scope=bot&permissions=2146958591 ').catch(e => console.log(e.stack));
+      message.author.send(' رابط البوت |  https://discordapp.com/api/oauth2/authorize?client_id=548492814367981569&permissions=8&scope=bot
 
     }
    } 
@@ -848,7 +848,7 @@ if (message.content === '^^invite') {
   
 
 client.on('message', message => {
-     if (message.content === "^^invite") {
+     if (message.content === "+invite") {
      let embed = new Discord.RichEmbed()
   .setAuthor(message.author.username)
   .setColor("#9B59B6")
@@ -874,7 +874,7 @@ m.sendMessage(args)
 
 
 client.on('message', message=>{
-    if (message.content ==='^^add-colors'){
+    if (message.content ==='+add-colors'){
         if (message.channel.guild){
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
@@ -891,7 +891,7 @@ client.on('message', message=>{
             message.channel.sendMessage(':warning:  This command only in servers')
         }
     }
-    if (message.content === '^^de-colors'){
+    if (message.content === '+de-colors'){
                 if (message.channel.guild){
             if (message.member.hasPermission('MANAGE_ROLES')){
                 setInterval(function(){})
